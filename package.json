@@ -1,0 +1,13 @@
+{
+  "name": "mern-testing",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "test": "cd server && npm test && cd ../client && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
